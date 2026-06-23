@@ -17,9 +17,6 @@ A modern React application for tracking and managing monthly expenses.
 * Local storage persistence
 * Responsive mobile design
 
-
-## 📸 Screenshots
-
 ### Dashboard
 
 Track your monthly spending with an intuitive dashboard.

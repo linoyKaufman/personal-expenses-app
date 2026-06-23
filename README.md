@@ -17,7 +17,6 @@ A modern React application for tracking and managing monthly expenses.
 * Local storage persistence
 * Responsive mobile design
 
----
 
 ## 📸 Screenshots
 
@@ -31,7 +30,6 @@ Track your monthly spending with an intuitive dashboard.
 * Category distribution chart
 * Spending summary cards
 
----
 
 ## 🛠️ Built With
 
@@ -47,7 +45,6 @@ Track your monthly spending with an intuitive dashboard.
 
 * Local Storage
 
----
 
 ## 📂 Project Structure
 
@@ -68,8 +65,6 @@ client/
 │
 └── package.json
 ```
-
----
 
 ## ⚙️ Installation
 
@@ -103,8 +98,6 @@ Build for production:
 npm run build
 ```
 
----
-
 ## 📈 Current Functionality
 
 ### Dashboard Cards
@@ -125,20 +118,7 @@ npm run build
 * Category pie chart
 * Monthly history overview
 
----
 
-## 🔮 Future Improvements
-
-* User authentication
-* Cloud database integration
-* Budget tracking
-* PDF monthly reports
-* Export/Import data
-* Recurring expenses
-* Dark mode
-* Multi-currency support
-
----
 
 ## 🌐 Live Demo
 

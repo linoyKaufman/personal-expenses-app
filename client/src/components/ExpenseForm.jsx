@@ -1,3 +1,5 @@
+import Select from "react-select";
+
 function ExpenseForm({
   amount,
   category,
@@ -5,6 +7,14 @@ function ExpenseForm({
   setCategory,
   addExpense,
 }) {
+  const options = [
+    { value: "Food", label: "Food" },
+    { value: "Shopping", label: "Shopping" },
+    { value: "Transportation", label: "Transportation" },
+    { value: "Entertainment", label: "Entertainment" },
+    { value: "Bills", label: "Bills" },
+  ];
+
   return (
     <div className="form">
       <input
@@ -14,17 +24,16 @@ function ExpenseForm({
         onChange={(e) => setAmount(e.target.value)}
       />
 
-      <select
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
-      >
-        <option value="">Select Category</option>
-        <option value="Food">Food</option>
-        <option value="Shopping">Shopping</option>
-        <option value="Transportation">Transportation</option>
-        <option value="Entertainment">Entertainment</option>
-        <option value="Bills">Bills</option>
-      </select>
+    <Select
+  options={options}
+  placeholder="Select Category"
+  menuPortalTarget={document.body}
+  styles={{
+    menuPortal: (base) => ({ ...base, zIndex: 9999 }),
+  }}
+  value={options.find((option) => option.value === category) || null}
+  onChange={(selectedOption) => setCategory(selectedOption.value)}
+/>
 
       <button onClick={addExpense}>
         Add Expense

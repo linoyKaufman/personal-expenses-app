@@ -6,7 +6,7 @@ function ExpenseForm({
   addExpense,
 }) {
   return (
-    <div>
+    <div className="form">
       <input
         type="number"
         placeholder="Amount"

@@ -160,3 +160,46 @@ h2 {
   flex: 1;
   z-index: 20;
 }
+@media (max-width: 768px) {
+  .app {
+    max-width: 100%;
+    margin: 0;
+    padding: 16px;
+  }
+
+  .card {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card strong {
+    font-size: 1.8rem;
+    word-break: break-word;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .form input,
+  .form button {
+    width: 100%;
+  }
+
+  .css-b62m3t-container {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
